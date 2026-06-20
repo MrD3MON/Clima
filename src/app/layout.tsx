@@ -4,9 +4,9 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Weather App",
+  title: "Clima",
   description: "Get real-time weather information for any location",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/logo.svg", type: "image/svg+xml" }],
 };
 
 export default function RootLayout({

@@ -1,29 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <defs>
-    <!-- Sun Gradient -->
-    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCD34D" />
-      <stop offset="100%" stop-color="#F59E0B" />
-    </linearGradient>
-    <!-- Cloud Gradient -->
-    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E2E8F0" />
-      <stop offset="100%" stop-color="#94A3B8" />
-    </linearGradient>
-  </defs>
-
-  <!-- Sun in background with rays -->
-  <circle cx="62" cy="38" r="18" fill="url(#sunGrad)" />
-  <g stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8">
-    <path d="M62 12v4M62 64v4M36 38h4M88 38h4M43.6 19.6l2.8 2.8M80.4 56.4l2.8 2.8M43.6 56.4l2.8 2.8M80.4 19.6l2.8 2.8" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 20 70 70" fill="none">
+  <style>
+    :root {
+      --primary: #10B981;
+      --primary-opacity: rgba(16, 185, 129, 0.2);
+      --muted: rgba(156, 163, 175, 0.75);
+      --card: #1f2937;
+      --foreground: #f3f4f6;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --primary: #059669;
+        --primary-opacity: rgba(5, 150, 105, 0.2);
+        --muted: rgba(107, 114, 128, 0.75);
+        --card: #ffffff;
+        --foreground: #1f2937;
+      }
+    }
+    .back-left {
+      fill: var(--primary-opacity);
+      stroke: var(--primary);
+    }
+    .back-right {
+      fill: var(--muted);
+      stroke: var(--foreground);
+    }
+    .front-center {
+      fill: var(--card);
+      stroke: var(--foreground);
+    }
+  </style>
+  <g>
+    <!-- Back Left Cloud -->
+    <path
+      d="M 20 55 a 10 10 0 0 1 12 -9.5 a 14 14 0 0 1 24 -4.5 a 11 11 0 0 1 12 14 H 20 z"
+      transform="translate(0, 14) scale(0.8)"
+      class="back-left"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
+    <!-- Back Right Cloud -->
+    <path
+      d="M 20 55 a 10 10 0 0 1 12 -9.5 a 14 14 0 0 1 24 -4.5 a 11 11 0 0 1 12 14 H 20 z"
+      transform="translate(18, 17) scale(0.8)"
+      class="back-right"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
+    <!-- Front Center Cloud -->
+    <path
+      d="M 20 55 a 10 10 0 0 1 12 -9.5 a 14 14 0 0 1 24 -4.5 a 11 11 0 0 1 12 14 H 20 z"
+      transform="translate(6, 22) scale(1)"
+      class="front-center"
+      stroke-width="2.5"
+      stroke-linejoin="round"
+    />
   </g>
-
-  <!-- Cloud in foreground -->
-  <path
-    d="M72.5 78A18 18 0 0 0 82.5 47a30 30 0 1 0-56 13A18 18 0 0 0 35.5 78h37z"
-    fill="url(#cloudGrad)"
-    stroke="#475569"
-    stroke-width="4"
-    stroke-linejoin="round"
-  />
 </svg>
