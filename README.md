@@ -1,4 +1,4 @@
-# Modern Weather App
+# Clima
 
 A sleek, responsive weather application built with the [T3 Stack](https://create.t3.gg/), providing real-time weather information with beautiful UI animations and detailed forecasts.
 
