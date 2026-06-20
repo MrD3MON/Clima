@@ -22,7 +22,7 @@ export default function HomePage() {
   const [error, setError] = useState<string | null>(null);
   const [retryCount, setRetryCount] = useState(0);
 
-  const [theme, setTheme] = useState<"sage" | "sunset" | "sand">("sage");
+  const [theme, setTheme] = useState<"sage" | "sunset" | "sand">("sand");
   const [mode, setMode] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
