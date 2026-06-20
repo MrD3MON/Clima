@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E62" />
+      <stop offset="100%" stop-color="#FF9966" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Glowing Sun Behind -->
+  <circle cx="65" cy="40" r="22" fill="url(#glowGrad)" opacity="0.8" />
+  
+  <!-- Pulse Line (Cloud outline + climate pulse wave) -->
+  <path d="M10 65h15l5-12l7 24l8-36l6 28l5-8h34c4.14 0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5c-.9 0-1.75.16-2.55.45C80 39.5 73.5 35 66 35c-7.16 0-13.38 4.14-16.48 10.15A7.478 7.478 0 0 0 45.5 45c-4.14 0-7.5 3.36-7.5 7.5c0 .77.12 1.51.34 2.2C36.8 54.3 35 56.4 35 59c0 3.3 2.7 6 6 6" 
+        stroke="url(#lineGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

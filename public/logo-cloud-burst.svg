@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Geometric Cloud Gradient -->
+    <linearGradient id="geomCloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <!-- Sun Burst Gradient -->
+    <linearGradient id="sunBurst" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EA580C" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sharp Geometric Sun Ray Piercing Through -->
+  <polygon points="50,15 70,40 55,42 62,60 42,42 50,42" fill="url(#sunBurst)" opacity="0.95" />
+
+  <!-- Geometric Polygonal Cloud Body -->
+  <path
+    d="M18 64 L24 45 L42 42 L55 35 L70 42 L82 45 L80 64 L68 70 L32 70 Z"
+    fill="url(#geomCloud)"
+    stroke="#F8FAFC"
+    stroke-width="3"
+    stroke-linejoin="miter"
+  />
+
+  <!-- Polygonal shading details inside the cloud -->
+  <polygon points="42,42 55,35 55,70 32,70" fill="#0F172A" opacity="0.25" />
+  <polygon points="55,35 70,42 68,70 55,70" fill="#FFFFFF" opacity="0.1" />
+</svg>

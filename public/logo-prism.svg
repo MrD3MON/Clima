@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Sun/Warm gradient -->
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F43" />
+      <stop offset="100%" stop-color="#FF5252" />
+    </linearGradient>
+    <!-- Rain/Cool gradient -->
+    <linearGradient id="coolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+    <!-- Earth/Base gradient -->
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Prism Facet (Cool/Rain/Wind) -->
+  <path d="M50 15 L20 65 L50 85 Z" fill="url(#coolGrad)" opacity="0.85" />
+  
+  <!-- Right Prism Facet (Warm/Sun/Light) -->
+  <path d="M50 15 L80 65 L50 85 Z" fill="url(#warmGrad)" opacity="0.9" />
+
+  <!-- Inner dividing prism details / highlights -->
+  <path d="M50 15 L50 85" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.3" />
+  
+  <!-- Climate equilibrium symbol in the center -->
+  <circle cx="50" cy="50" r="8" fill="#FFFFFF" opacity="0.15" />
+  <circle cx="50" cy="50" r="5" fill="#FFFFFF" />
+</svg>

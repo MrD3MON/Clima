@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="windGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+  </defs>
+
+  <!-- Kinetic Outer Ring (Wind stream) -->
+  <path d="M50 10 A40 40 0 1 1 10 50 A40 40 0 0 1 78.3 21.7" stroke="url(#windGrad)" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Sun Core -->
+  <circle cx="50" cy="50" r="16" fill="url(#sunGrad)" />
+
+  <!-- Orbiting Raindrop -->
+  <path d="M74 38c0 2.2-.8 4-2.5 4s-2.5-1.8-2.5-4c0-3.3 2.5-7.5 2.5-7.5s2.5 4.2 2.5 7.5z" fill="#3B82F6" />
+  
+  <!-- Orbiting Snowflake/Star -->
+  <path d="M26 62h6M29 59v6M27 60l4 4M31 60l-4 4" stroke="#E2E8F0" stroke-width="1.5" stroke-linecap="round" />
+</svg>

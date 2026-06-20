@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Circle Gradient 1 (Sage/Mint) -->
+    <linearGradient id="circMint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <!-- Circle Gradient 2 (Sky/Blue) -->
+    <linearGradient id="circSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <!-- Circle Gradient 3 (Amber/Sun) -->
+    <linearGradient id="circAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Cloud circle (Mint) -->
+  <circle cx="34" cy="56" r="20" fill="url(#circMint)" opacity="0.8" />
+  
+  <!-- Right Cloud circle (Sky Blue) -->
+  <circle cx="66" cy="56" r="20" fill="url(#circSky)" opacity="0.75" />
+
+  <!-- Center Rising circle (Amber Sun) -->
+  <circle cx="50" cy="40" r="22" fill="url(#circAmber)" opacity="0.85" stroke="#FFFFFF" stroke-width="2" />
+
+  <!-- Connecting sleek base curves -->
+  <path d="M14 62h72" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+  <path d="M22 69h56" stroke="#475569" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+</svg>

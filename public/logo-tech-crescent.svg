@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Crescent Gradient -->
+    <linearGradient id="crescentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5E62" />
+      <stop offset="100%" stop-color="#FF9966" />
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Crescent Sun Shape -->
+  <path
+    d="M50 16a34 34 0 0 1 34 34c0 6.8-2 13-5.5 18.2A33.9 33.9 0 0 0 50 16z"
+    fill="url(#crescentGrad)"
+    opacity="0.9"
+  />
+
+  <!-- Concentric Inner Circle Ring -->
+  <circle cx="50" cy="50" r="22" stroke="#E2E8F0" stroke-width="2" opacity="0.3" />
+
+  <!-- Tech Cloud Lines -->
+  <path
+    d="M16 60a14 14 0 0 1 14-14h36a14 14 0 0 1 0 28H30a14 14 0 0 1-14-14z"
+    fill="url(#cloudGrad)"
+    stroke="#64748B"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Lightning Bolt -->
+  <path
+    d="M44 52L40 62h12l-4 10"
+    stroke="#F59E0B"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="#F59E0B"
+  />
+</svg>

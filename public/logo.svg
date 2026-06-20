@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <!-- Sun Gradient -->
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <!-- Cloud Gradient -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sun in background with rays -->
+  <circle cx="62" cy="38" r="18" fill="url(#sunGrad)" />
+  <g stroke="#F59E0B" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M62 12v4M62 64v4M36 38h4M88 38h4M43.6 19.6l2.8 2.8M80.4 56.4l2.8 2.8M43.6 56.4l2.8 2.8M80.4 19.6l2.8 2.8" />
+  </g>
+
+  <!-- Cloud in foreground -->
+  <path
+    d="M72.5 78A18 18 0 0 0 82.5 47a30 30 0 1 0-56 13A18 18 0 0 0 35.5 78h37z"
+    fill="url(#cloudGrad)"
+    stroke="#475569"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+</svg>
