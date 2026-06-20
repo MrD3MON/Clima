@@ -27,7 +27,7 @@ export default function HomePage() {
 
   useEffect(() => {
     // Load persisted theme/mode
-    const savedTheme = localStorage.getItem("clima-theme") as "sage" | "sunset" | "sand" | null;
+    const savedTheme = localStorage.getItem("clima-theme") as "sand" | "sunset" | "sage" | null;
     const savedMode = localStorage.getItem("clima-mode") as "light" | "dark" | null;
     if (savedTheme) setTheme(savedTheme);
     if (savedMode) setMode(savedMode);
