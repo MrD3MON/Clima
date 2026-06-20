@@ -2,7 +2,7 @@
 
 A sleek, responsive weather application built with the [T3 Stack](https://create.t3.gg/), providing real-time weather information with beautiful UI animations and detailed forecasts.
 
-![Weather App Screenshot](https://dxtrweather.vercel.app/demo.png)
+![Weather App Screenshot](./public/demo.png)
 
 Features
 
@@ -35,7 +35,7 @@ Features
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mrdxtr/weatherapp.git
+   git clone https://github.com/mrd3mon/clima.git
    cd weatherapp
    ```
 

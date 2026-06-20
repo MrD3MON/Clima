@@ -247,7 +247,7 @@ export default function HomePage() {
                 >
                   View on GitHub
                 </a>
-                <p className="">© {new Date().getFullYear()} Weather App</p>
+                <p className="">© {new Date().getFullYear()} Clima</p>
               </div>
             </motion.footer>
           </div>
