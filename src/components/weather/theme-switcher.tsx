@@ -43,15 +43,15 @@ export function ThemeSwitcher({
   ];
 
   return (
-    <div className="flex flex-wrap items-center gap-3 rounded-full border border-border/30 bg-card/45 p-1.5 shadow-lg backdrop-blur-md">
+    <div className="flex items-center gap-1 sm:gap-2.5 rounded-full border border-border/30 bg-card/45 p-1 sm:p-1.5 shadow-lg backdrop-blur-md">
       {/* Palette Icon / Label (visible on larger screens) */}
-      <div className="flex items-center gap-1.5 px-3 text-muted-foreground">
+      <div className="hidden sm:flex items-center gap-1.5 px-3 text-muted-foreground">
         <Palette className="h-4 w-4" />
         <span className="hidden text-xs font-semibold sm:inline">Theme:</span>
       </div>
 
       {/* Theme Options */}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-0.5 sm:gap-1">
         {themesList.map((t) => {
           const isActive = theme === t.id;
           return (
@@ -59,7 +59,8 @@ export function ThemeSwitcher({
               key={t.id}
               onClick={() => setTheme(t.id)}
               className={cn(
-                "relative flex h-8 items-center gap-1.5 rounded-full px-3 text-xs font-medium transition-all duration-300",
+                "relative flex h-7 items-center justify-center rounded-full transition-all duration-300",
+                "w-7 sm:w-auto sm:h-8 sm:px-3 sm:gap-1.5 text-xs font-medium",
                 isActive
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground hover:bg-muted/30"
@@ -86,7 +87,7 @@ export function ThemeSwitcher({
               <span className="relative z-10 hidden sm:inline">{t.label}</span>
 
               {isActive && (
-                <Check className="relative z-10 h-3 w-3 text-primary animate-in fade-in zoom-in duration-300" />
+                <Check className="relative z-10 h-3 w-3 text-primary animate-in fade-in zoom-in duration-300 hidden sm:block" />
               )}
             </button>
           );
@@ -100,7 +101,7 @@ export function ThemeSwitcher({
         variant="ghost"
         size="icon"
         onClick={() => setMode(mode === "light" ? "dark" : "light")}
-        className="h-8 w-8 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted/30"
+        className="h-7 w-7 sm:h-8 sm:w-8 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted/30"
         title={mode === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
       >
         <div className="relative h-4 w-4">
